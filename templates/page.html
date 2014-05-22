@@ -1,2 +1,30 @@
-<h1>{the_title}</h1>
-{the_content html=1}
+{loop name=sections}
+	{if {post_meta key="_cp_template"} eq image}
+		<div class="container">
+		<div class="element">
+			<section class="main-image full">
+
+				{post_meta key="image_bg" out="arraytestValues" id={the_id}}
+				{if $arraytestValues}
+					{foreach from=$arraytestValues item=image key=key}
+								{image id=$image q=95 title={the_title}}
+					{/foreach}
+				{/if}
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quaerat maxime eligendi quisquam omnis fugit.</p>
+					<a href="#" class="cta">Call to action</a>
+				</div>
+			</section>
+		</div>
+	</div>
+	{/if}
+	{if {post_meta key="_cp_template"} eq intro}
+	<div class="container">
+			<div class="element">
+				<section class="special full">
+					{the_content id={the_id} html=1}
+				</section>
+			</div>
+		</div>
+	{/if}
+{/loop}
