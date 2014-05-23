@@ -1,28 +1,27 @@
 {loop name=sections}
 	{if {post_meta key="_cp_template"} eq image}
 		<div class="container">
-		<div class="element">
-			<section class="main-image full">
-
-				{post_meta key="image_bg" out="arraytestValues" id={the_id}}
-				{if $arraytestValues}
-					{foreach from=$arraytestValues item=image key=key}
-								{image id=$image q=95 title={the_title}}
-					{/foreach}
-				{/if}
-				<div>
-					<p>
-						{post_meta key="txt"}
-						<br/><a href="{post_meta key="cta_link"}" class="cta">{post_meta key="cta_text"}</a>
-					</p>
-				</div>
-			</section>
+			<div class="element no-padding">
+				<section class="main-image full">
+					{post_meta key="image_bg" out="arraytestValues" id={the_id}}
+					{if $arraytestValues}
+						{foreach from=$arraytestValues item=image key=key}
+									{image id=$image q=95 title={the_title}}
+						{/foreach}
+					{/if}
+					<div>
+						<p>
+							{post_meta key="txt"}
+							<br/><a href="{post_meta key="cta_link"}" class="cta">{post_meta key="cta_text"}</a>
+						</p>
+					</div>
+				</section>
+			</div>
 		</div>
-	</div>
 	{/if}
 	{if {post_meta key="_cp_template"} eq intro}
-	<div class="container">
-			<div class="element">
+		<div class="container">
+			<div class="element no-padding">
 				<section class="special full">
 					{the_content id={the_id} html=1}
 				</section>
@@ -30,46 +29,46 @@
 		</div>
 	{/if}
 	{if {post_meta key="_cp_template"} eq single_column_100}			
-	<div class="container">
+		<div class="container">
 			<div class="element">
 				<h1>{post_meta key=title_100 id={the_id}}</h1>
 				<h2>{post_meta key=subtitle_100 id={the_id}}</h2>
 				<section class="columns">
 					<article class="single-column content">
-						{the_content id={the_id} html=1}
+						{post_meta key=text_100 id={the_id} html=1}
 					</article>
 				</section>
 			</div>
 		</div>
 	{/if}
 	{if {post_meta key="_cp_template"} eq single_column_75}			
-	<div class="container">
+		<div class="container">
 			<div class="element">
 				<h1>{post_meta key=title_75 id={the_id}}</h1>
 				<h2>{post_meta key=subtitle_75 id={the_id}}</h2>
 				<section class="columns">
 					<article class="single-column medium content">
-						{the_content id={the_id} html=1}
+						{post_meta key=text_75 id={the_id} html=1}
 					</article>
 				</section>
 			</div>
 		</div>
 	{/if}
 	{if {post_meta key="_cp_template"} eq single_column_50}			
-	<div class="container">
+		<div class="container">
 			<div class="element">
 				<h1>{post_meta key=title_50 id={the_id}}</h1>
 				<h2>{post_meta key=subtitle_50 id={the_id}}</h2>
 				<section class="columns">
 					<article class="single-column small content">
-						{the_content id={the_id} html=1}
+						{post_meta key=text_50 id={the_id} html=1}
 					</article>
 				</section>
 			</div>
 		</div>
 	{/if}
 	{if {post_meta key="_cp_template"} eq two_columns_50_50}			
-	<div class="container">
+		<div class="container">
 			<div class="element">
 				<h1>{post_meta key=title_50_50 id={the_id}}</h1>
 				<h2>{post_meta key=subtitle_50_50 id={the_id}}</h2>
@@ -85,7 +84,7 @@
 		</div>
 	{/if}
 	{if {post_meta key="_cp_template"} eq two_columns_25_75}			
-	<div class="container">
+		<div class="container">
 			<div class="element">
 				<h1>{post_meta key=title_25_75 id={the_id}}</h1>
 				<h2>{post_meta key=subtitle_25_75 id={the_id}}</h2>
@@ -101,7 +100,7 @@
 		</div>
 	{/if}
 	{if {post_meta key="_cp_template"} eq three_columns}			
-	<div class="container">
+		<div class="container">
 			<div class="element">
 				<h1>{post_meta key=title_3 id={the_id}}</h1>
 				<h2>{post_meta key=subtitle_3 id={the_id}}</h2>
@@ -120,7 +119,7 @@
 		</div>
 	{/if}
 	{if {post_meta key="_cp_template"} eq four_columns}			
-	<div class="container">
+		<div class="container">
 			<div class="element">
 				<h1>{post_meta key=title_4 id={the_id}}</h1>
 				<h2>{post_meta key=subtitle_4 id={the_id}}</h2>

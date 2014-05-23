@@ -96,9 +96,11 @@ a:hover {
     display: table;
     clear: both; }
 
-.columns {
-  margin-top: 1.618em;
-  margin-bottom: 1.618em; }
+.element {
+  padding-top: 50px; }
+
+.no-padding {
+  padding-top: 0px; }
 
 .single-column {
   float: left;
@@ -382,15 +384,18 @@ h3 {
   line-height: 1.6;
   margin-bottom: 1.618em; }
 
+.columns h1, .columns h2 {
+  text-align: left; }
+
 /* --------- HEADLINE --------- */
 h1 {
   font-family: "SourceSansPro-Semibold", Helvetica, Arial, sans-serif;
   font-size: 32px;
   line-height: 32px;
-  margin: 50px 0;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  margin-bottom: 10px; }
 
 #main_image div {
   position: absolute;
@@ -452,13 +457,10 @@ h2 {
   font-family: "SourceSansPro-ExtraLight", Helvetica, Arial, sans-serif;
   font-size: 32px;
   line-height: 32px;
-  margin: 30px 0;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 2px; }
-
-h1 + h2 {
-  margin: -50px 0 20px 0; }
+  letter-spacing: 2px;
+  margin-bottom: 10px; }
 
 /* --------- IMAGE --------- */
 .main-image {

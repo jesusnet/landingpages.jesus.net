@@ -1,10 +1,9 @@
 <?php
 
-
 $cp_config['nav_menu'][] = array(
-	'name' => 'Menu in header',
+	'name' => __cp('Menu in header', 'general'),
 	'location' => 'header_menu',
-	'description' => 'Menu in header',
+	'description' => __cp('Menu in header', 'general'),
 	'args' => array(
 		'container' => null,
 		'menu_class' => 'header_menu',
@@ -13,9 +12,9 @@ $cp_config['nav_menu'][] = array(
 );
 
 $cp_config['nav_menu'][] = array(
-	'name' => 'Menu in footer',
+	'name' => __cp('Menu in footer', 'general'),
 	'location' => 'footer_menu',
-	'description' => 'Menu in footer',
+	'description' => __cp('Menu in footer', 'general'),
 	'args' => array(
 		'container' => null,
 		'menu_class' => 'footer_menu',
@@ -24,9 +23,9 @@ $cp_config['nav_menu'][] = array(
 );
 
 $cp_config['nav_menu'][] = array(
-	'name' => 'Menu in footer at bottom',
+	'name' => __cp('Menu in footer at the bottom', 'general'),
 	'location' => 'footer_menu_bottom',
-	'description' => 'Menu in footer at the bottom',
+	'description' => __cp('Menu in footer at the bottom', 'general'),
 	'args' => array(
 		'container' => null,
 		'menu_class' => 'footer_menu_bottom',

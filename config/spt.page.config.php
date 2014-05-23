@@ -9,31 +9,31 @@ $cp_config['mb'][] = array(
 		'name' => 'Details',
 		'post_type' => 'page',
 		'template' => 'image',
-		'context' => 'normal', // normal | advanced | side
-		'priority' => 'high', // high | core | default | low
+		'context' => 'normal', 
+		'priority' => 'high', 
 	),
 	'fields' => array(
 		1 => array(
 			'id' => 'txt',
-			'name' => 'Txt',
+			'name' => __cp('Text', 'general'),
 			'type' => 'textarea',
 		),
 		2 => array(
 			'id' => 'cta_text',
-			'name' => 'Button text',
+			'name' => __cp('Button', 'general'),
 			'type' => 'text',
 		),
 		3 => array(
 			'id' => 'cta_link',
-			'name' => 'Button link',
+			'name' => __cp('Link', 'general'),
 			'type' => 'text',
 		),
 		4 => array(
 			'id' => 'image_bg',
-			'name' => 'Image',
+			'name' => __cp('Image', 'general'),
 			'type' => 'upload',
 			'multiple' => false,
-			'filetype' => 'image', // image, file, video
+			'filetype' => 'image', 
 			'attributes' => array(
 				'autofocus' => false,
 				'disabled' => false,
@@ -41,9 +41,9 @@ $cp_config['mb'][] = array(
 				'size' => '1',
 			),
 			'labels' => array(
-				'button' => 'Add',
-				'button_window' => 'Add image',
-				'title_window' => 'Choose image form library or upload'
+				'button' => __cp('Add', 'general'),
+				'button_window' => __cp('Add image', 'general'),
+				'title_window' => __cp('Choose image form library or upload', 'general')
 			)
 		)
 	)
@@ -53,22 +53,27 @@ $cp_config['mb'][] = array(
 	'settings' => array(
 		'active' => true,
 		'id' => 'det_2',
-		'name' => 'Details',
+		'name' => __cp('Details', 'general'),
 		'post_type' => 'page',
 		'template' => 'single_column_100',
-		'context' => 'normal', // normal | advanced | side
-		'priority' => 'high', // high | core | default | low
+		'context' => 'normal', 
+		'priority' => 'high', 
 	),
 	'fields' => array(
 		1 => array(
 			'id' => 'title_100',
-			'name' => 'Title',
+			'name' => __cp('Title', 'general'),
 			'type' => 'text',
 		),
 		2 => array(
 			'id' => 'subtitle_100',
-			'name' => 'Subtitle',
+			'name' => __cp('Subtitle', 'general'),
 			'type' => 'text',
+		),
+		3 => array(
+			'id' => 'text_100',
+			'name' => __cp('Text', 'general'),
+			'type' => 'editor',
 		),
 	
 	)
@@ -78,22 +83,27 @@ $cp_config['mb'][] = array(
 	'settings' => array(
 		'active' => true,
 		'id' => 'det_3',
-		'name' => 'Details',
+		'name' => __cp('Details', 'general'),
 		'post_type' => 'page',
 		'template' => 'single_column_75',
-		'context' => 'normal', // normal | advanced | side
-		'priority' => 'high', // high | core | default | low
+		'context' => 'normal', 
+		'priority' => 'high', 
 	),
 	'fields' => array(
 		1 => array(
 			'id' => 'title_75',
-			'name' => 'Title',
+			'name' =>  __cp('Title', 'general'),
 			'type' => 'text',
 		),
 		2 => array(
 			'id' => 'subtitle_75',
-			'name' => 'Subtitle',
+			'name' => __cp('Subtitle', 'general'),
 			'type' => 'text',
+		),
+		3 => array(
+			'id' => 'text_75',
+			'name' => __cp('Text', 'general'),
+			'type' => 'editor',
 		),
 	
 	)
@@ -103,22 +113,27 @@ $cp_config['mb'][] = array(
 	'settings' => array(
 		'active' => true,
 		'id' => 'det_4',
-		'name' => 'Details',
+		'name' => __cp('Details', 'general'),
 		'post_type' => 'page',
 		'template' => 'single_column_50',
-		'context' => 'normal', // normal | advanced | side
-		'priority' => 'high', // high | core | default | low
+		'context' => 'normal', 
+		'priority' => 'high', 
 	),
 	'fields' => array(
 		1 => array(
 			'id' => 'title_50',
-			'name' => 'Title',
+			'name' =>  __cp('Title', 'general'),
 			'type' => 'text',
 		),
 		2 => array(
 			'id' => 'subtitle_50',
-			'name' => 'Subtitle',
+			'name' => __cp('Subtitle', 'general'),
 			'type' => 'text',
+		),
+		3 => array(
+			'id' => 'text_50',
+			'name' => __cp('Text', 'general'),
+			'type' => 'editor',
 		),
 	
 	)
@@ -128,31 +143,31 @@ $cp_config['mb'][] = array(
 	'settings' => array(
 		'active' => true,
 		'id' => 'det_5',
-		'name' => 'Details',
+		'name' => __cp('Details', 'general'),
 		'post_type' => 'page',
 		'template' => 'two_columns_50_50',
-		'context' => 'normal', // normal | advanced | side
-		'priority' => 'high', // high | core | default | low
+		'context' => 'normal', 
+		'priority' => 'high', 
 	),
 	'fields' => array(
 		1 => array(
 			'id' => 'title_50_50',
-			'name' => 'Title',
+			'name' =>  __cp('Title', 'general'),
 			'type' => 'text',
 		),
 		2 => array(
 			'id' => 'subtitle_50_50',
-			'name' => 'Subtitle',
+			'name' => __cp('Subtitle', 'general'),
 			'type' => 'text',
 		),
 		3 => array(
 			'id' => 'column_1_50_50',
-			'name' => 'Left column',
+			'name' => __cp('Left column', 'general'),
 			'type' => 'editor',
 		),
 		4 => array(
 			'id' => 'column_2_50_50',
-			'name' => 'Right column',
+			'name' => __cp('Right column', 'general'),
 			'type' => 'editor',
 		),
 	
@@ -163,31 +178,31 @@ $cp_config['mb'][] = array(
 	'settings' => array(
 		'active' => true,
 		'id' => 'det_6',
-		'name' => 'Details',
+		'name' => __cp('Details', 'general'),
 		'post_type' => 'page',
 		'template' => 'two_columns_25_75',
-		'context' => 'normal', // normal | advanced | side
-		'priority' => 'high', // high | core | default | low
+		'context' => 'normal', 
+		'priority' => 'high', 
 	),
 	'fields' => array(
 		1 => array(
 			'id' => 'title_25_75',
-			'name' => 'Title',
+			'name' =>  __cp('Title', 'general'),
 			'type' => 'text',
 		),
 		2 => array(
 			'id' => 'subtitle_25_75',
-			'name' => 'Subtitle',
+			'name' => __cp('Subtitle', 'general'),
 			'type' => 'text',
 		),
 		3 => array(
 			'id' => 'column_1_25_75',
-			'name' => 'Left column',
+			'name' => __cp('Left column', 'general'),
 			'type' => 'editor',
 		),
 		4 => array(
 			'id' => 'column_2_25_75',
-			'name' => 'Right column',
+			'name' => __cp('Right column', 'general'),
 			'type' => 'editor',
 		),
 	
@@ -198,36 +213,36 @@ $cp_config['mb'][] = array(
 	'settings' => array(
 		'active' => true,
 		'id' => 'det_6',
-		'name' => 'Details',
+		'name' => __cp('Details', 'general'),
 		'post_type' => 'page',
 		'template' => 'three_columns',
-		'context' => 'normal', // normal | advanced | side
-		'priority' => 'high', // high | core | default | low
+		'context' => 'normal', 
+		'priority' => 'high', 
 	),
 	'fields' => array(
 		1 => array(
 			'id' => 'title_3',
-			'name' => 'Title',
+			'name' =>  __cp('Title', 'general'),
 			'type' => 'text',
 		),
 		2 => array(
 			'id' => 'subtitle_3',
-			'name' => 'Subtitle',
+			'name' => __cp('Subtitle', 'general'),
 			'type' => 'text',
 		),
 		3 => array(
 			'id' => 'column_1_3',
-			'name' => 'Left column',
+			'name' => __cp('Left column', 'general'),
 			'type' => 'editor',
 		),
 		4 => array(
 			'id' => 'column_2_3',
-			'name' => 'Center column',
+			'name' => __cp('Middle column', 'general'),
 			'type' => 'editor',
 		),
 		5 => array(
 			'id' => 'column_3_3',
-			'name' => 'Right column',
+			'name' => __cp('Right column', 'general'),
 			'type' => 'editor',
 		),
 	
@@ -238,41 +253,41 @@ $cp_config['mb'][] = array(
 	'settings' => array(
 		'active' => true,
 		'id' => 'det_7',
-		'name' => 'Details',
+		'name' => __cp('Details', 'general'),
 		'post_type' => 'page',
 		'template' => 'four_columns',
-		'context' => 'normal', // normal | advanced | side
-		'priority' => 'high', // high | core | default | low
+		'context' => 'normal', 
+		'priority' => 'high', 
 	),
 	'fields' => array(
 		1 => array(
 			'id' => 'title_4',
-			'name' => 'Title',
+			'name' =>  __cp('Title', 'general'),
 			'type' => 'text',
 		),
 		2 => array(
 			'id' => 'subtitle_4',
-			'name' => 'Subtitle',
+			'name' => __cp('Subtitle', 'general'),
 			'type' => 'text',
 		),
 		3 => array(
 			'id' => 'column_1_4',
-			'name' => 'Column 1',
+			'name' => __cp('Column 1', 'general'),
 			'type' => 'editor',
 		),
 		4 => array(
 			'id' => 'column_2_4',
-			'name' => 'Column 2',
+			'name' => __cp('Column 2', 'general'),
 			'type' => 'editor',
 		),
 		5 => array(
 			'id' => 'column_3_4',
-			'name' => 'Column 3',
+			'name' => __cp('Column 3', 'general'),
 			'type' => 'editor',
 		),
 		6 => array(
 			'id' => 'column_4_4',
-			'name' => 'Column 4',
+			'name' => __cp('Column 4', 'general'),
 			'type' => 'editor',
 		),
 	
@@ -283,64 +298,64 @@ $cp_config['mb'][] = array(
 
 $cp_config['template']['image'] = array(
 	'active' => 'true',
-	'name' => 'Image + short text',
-	'post_type' => 'page', // optional
+	'name' => __cp('Image + short text', 'general'),
+	'post_type' => 'page', 
 	'file' => '01.html'
 );
 
 $cp_config['template']['intro'] = array(
 	'active' => 'true',
-	'name' => 'Introduction',
-	'post_type' => 'page', // optional
+	'name' => __cp('Introduction', 'general'),
+	'post_type' => 'page', 
 	'file' => '02.html'
 );
 
 $cp_config['template']['single_column_100'] = array(
 	'active' => 'true',
-	'name' => 'Single column - full width',
-	'post_type' => 'page', // optional
+	'name' => __cp('Single column - full width', 'general'),
+	'post_type' => 'page', 
 	'file' => '03.html'
 );
 
 $cp_config['template']['single_column_75'] = array(
 	'active' => 'true',
-	'name' => 'Single column - 3/4 width',
-	'post_type' => 'page', // optional
+	'name' => __cp('Single column - 3/4 width', 'general'),
+	'post_type' => 'page', 
 	'file' => '04.html'
 );
 
 $cp_config['template']['single_column_50'] = array(
 	'active' => 'true',
-	'name' => 'Single column - half width',
-	'post_type' => 'page', // optional
+	'name' => __cp('Single column - half width', 'general'),
+	'post_type' => 'page', 
 	'file' => '05.html'
 );
 
 $cp_config['template']['two_columns_50_50'] = array(
 	'active' => 'true',
-	'name' => 'Two columns - 50/50',
-	'post_type' => 'page', // optional
+	'name' => __cp('Two columns - 50/50', 'general'),
+	'post_type' => 'page', 
 	'file' => '06.html'
 );
 
 $cp_config['template']['two_columns_25_75'] = array(
 	'active' => 'true',
-	'name' => 'Two columns - 25/75',
-	'post_type' => 'page', // optional
+	'name' => __cp('Two columns - 25/75', 'general'),
+	'post_type' => 'page', 
 	'file' => '07.html'
 );
 
 $cp_config['template']['three_columns'] = array(
 	'active' => 'true',
-	'name' => 'Three columns',
-	'post_type' => 'page', // optional
+	'name' => __cp('Three columns', 'general'),
+	'post_type' => 'page',
 	'file' => '08.html'
 );
 
 $cp_config['template']['four_columns'] = array(
 	'active' => 'true',
-	'name' => 'Four columns',
-	'post_type' => 'page', // optional
+	'name' => __cp('Four columns', 'general'),
+	'post_type' => 'page', 
 	'file' => '08.html'
 );
 

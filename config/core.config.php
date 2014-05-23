@@ -17,7 +17,6 @@ $cp_config['cleanup']['meta']['feed_links'] = false; // Display the links to the
 $cp_config['cleanup']['meta']['parent_post_rel'] = false; // prev link
 $cp_config['cleanup']['meta']['start_post_rel'] = false; // start link
 $cp_config['cleanup']['meta']['adjacent_posts_rel'] = false; // Display relational links for the posts adjacent to the current post.
-
 $cp_config['cleanup']['js']['l10n'] = false; 
 $cp_config['cleanup']['admin']['bar'] = false;
 
@@ -35,7 +34,6 @@ $cp_config['css'][] = array(
 	'condition' => false, // lt IE 9
 	'version' => ''
 );
-
 
 /* ----------- js files -------------- */
 
@@ -60,7 +58,6 @@ $cp_config['js'][] = array(
 	'dependencies' => array('jquery'),
 	'version' => '0.1.0'
 );
-
 
 /* ----------- Languages -------------- */
 
