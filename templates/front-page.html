@@ -12,7 +12,9 @@
 					<div>
 						<p>
 							{post_meta key="txt"}
-							<br/><a href="{post_meta key="cta_link"}" class="cta">{post_meta key="cta_text"}</a>
+							{if {post_meta key="cta_text"}}
+								<br/><a href="{post_meta key="cta_link"}" class="cta">{post_meta key="cta_text"}</a>
+							{/if}
 						</p>
 					</div>
 				</section>
@@ -23,7 +25,10 @@
 		<div class="container">
 			<div class="element no-padding">
 				<section class="special full">
-					{the_content id={the_id} html=1}
+					{post_meta key="special_txt" html="1"}
+					{if {post_meta key="special_cta_text"}}
+						<br/><a href="{post_meta key="special_cta_link"}" class="cta">{post_meta key="special_cta_text"}</a>
+					{/if}
 				</section>
 			</div>
 		</div>

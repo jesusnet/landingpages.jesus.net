@@ -39,6 +39,7 @@ $cp_config['customize_settings']['main_color'] = array(
 		'a {color: %s}',
 		'.cta {background-color: %s}',
 		'.special {background-color: %s}',
+		'.special .cta:hover {color: %s}',
 		'.footer_menu_bottom li a:hover {color: %s}',
 		'footer a:hover {color: %s}',
 	)

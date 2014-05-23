@@ -166,7 +166,8 @@ a:hover {
 
 .special {
   background: #e47c24;
-  padding: 1.618em 0; }
+  padding: 1.618em 0;
+  text-align: center; }
   .special p {
     width: 50%;
     margin: 0 auto;
@@ -174,6 +175,13 @@ a:hover {
     font-size: 22px;
     line-height: 1.8;
     color: #fff; }
+  .special .cta, .special form.jn input[type=submit], form.jn .special input[type=submit] {
+    background-color: white;
+    color: black; }
+    .special .cta:hover, .special form.jn input[type=submit]:hover, form.jn .special input[type=submit]:hover {
+      background-color: #f1f1f1;
+      color: #e47c24;
+      opacity: 1; }
 
 /* --------- FORMS --------- */
 form.jn:after {
@@ -512,7 +520,7 @@ h2 {
     -moz-box-sizing: border-box;
     text-align: center; }
   .cta:hover, form.jn input[type=submit]:hover {
-    background-color: #ea9751;
+    opacity: 0.8;
     color: #fff; }
 
 /* === RWD === */

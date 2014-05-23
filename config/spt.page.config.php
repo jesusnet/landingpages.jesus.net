@@ -52,6 +52,35 @@ $cp_config['mb'][] = array(
 $cp_config['mb'][] = array(
 	'settings' => array(
 		'active' => true,
+		'id' => 'det_1q',
+		'name' => 'Details',
+		'post_type' => 'page',
+		'template' => 'intro',
+		'context' => 'normal', 
+		'priority' => 'high', 
+	),
+	'fields' => array(
+		1 => array(
+			'id' => 'special_txt',
+			'name' => __cp('Text', 'general'),
+			'type' => 'textarea',
+		),
+		2 => array(
+			'id' => 'special_cta_text',
+			'name' => __cp('Button', 'general'),
+			'type' => 'text',
+		),
+		3 => array(
+			'id' => 'special_cta_link',
+			'name' => __cp('Link', 'general'),
+			'type' => 'text',
+		)
+	)
+);
+
+$cp_config['mb'][] = array(
+	'settings' => array(
+		'active' => true,
 		'id' => 'det_2',
 		'name' => __cp('Details', 'general'),
 		'post_type' => 'page',
