@@ -11,8 +11,10 @@
 					{/foreach}
 				{/if}
 				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quaerat maxime eligendi quisquam omnis fugit.</p>
-					<a href="#" class="cta">Call to action</a>
+					<p>
+						{post_meta key="txt"}
+						<br/><a href="{post_meta key="cta_link"}" class="cta">{post_meta key="cta_text"}</a>
+					</p>
 				</div>
 			</section>
 		</div>
@@ -59,7 +61,7 @@
 				<h1>{post_meta key=title_50 id={the_id}}</h1>
 				<h2>{post_meta key=subtitle_50 id={the_id}}</h2>
 				<section class="columns">
-					<article class="single-column small content" style="background-color: red;">
+					<article class="single-column small content">
 						{the_content id={the_id} html=1}
 					</article>
 				</section>
