@@ -36,12 +36,15 @@ $cp_config['customize_settings']['main_color'] = array(
 	'priority' => 15,
 	'control' => 'WP_Customize_Color_Control',
 	'css' => array(
-		'a {color: %s}',
-		'.cta {background-color: %s}',
+		'p a {color: %s}',
+		'.main-image .cta {background-color: %s}',
+		'.main-image .cta:hover {background-color: rgba(%s,0.8)}',
 		'.special {background-color: %s}',
 		'.special .cta:hover {color: %s}',
 		'.footer_menu_bottom li a:hover {color: %s}',
 		'footer a:hover {color: %s}',
+		'h5 {color: %s}',
+		'h6 {color: %s}',
 	)
 );
 

@@ -22,14 +22,3 @@ $cp_config['nav_menu'][] = array(
 	)
 );
 
-$cp_config['nav_menu'][] = array(
-	'name' => __cp('Menu in footer at the bottom', 'general'),
-	'location' => 'footer_menu_bottom',
-	'description' => __cp('Menu in footer at the bottom', 'general'),
-	'args' => array(
-		'container' => null,
-		'menu_class' => 'footer_menu_bottom',
-		'menu_id' => null
-	)
-);
-

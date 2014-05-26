@@ -45,7 +45,40 @@ $cp_config['mb'][] = array(
 				'button_window' => __cp('Add image', 'general'),
 				'title_window' => __cp('Choose image form library or upload', 'general')
 			)
-		)
+		),
+		5 => array(
+			'id' => 'align',
+			'name' => __cp('Text Position - horizontal', 'general'),
+			'type' => 'select',
+			'values' => array(
+				0 => __cp('select', 'general'),
+				1 => __cp('Left', 'general'),
+				2 => __cp('Center', 'general'),
+				3 => __cp('Right', 'general')
+			)
+		),
+		6 => array(
+			'id' => 'valign',
+			'name' => __cp('Text Position - vertical', 'general'),
+			'type' => 'select',
+			'values' => array(
+				0 => __cp('select', 'general'),
+				1 => __cp('Top', 'general'),
+				2 => __cp('Middle', 'general'),
+				3 => __cp('Bottom', 'general')
+			)
+		),
+		7 => array(
+			'id' => 'text_align',
+			'name' => __cp('Text Align', 'general'),
+			'type' => 'select',
+			'values' => array(
+				0 => __cp('select', 'general'),
+				1 => __cp('Left', 'general'),
+				2 => __cp('Center', 'general'),
+				3 => __cp('Right', 'general')
+			)
+		),
 	)
 );
 
@@ -191,12 +224,12 @@ $cp_config['mb'][] = array(
 		),
 		3 => array(
 			'id' => 'column_1_50_50',
-			'name' => __cp('Left column', 'general'),
+			'name' => __cp('Column 1', 'general'),
 			'type' => 'editor',
 		),
 		4 => array(
 			'id' => 'column_2_50_50',
-			'name' => __cp('Right column', 'general'),
+			'name' => __cp('Column 2', 'general'),
 			'type' => 'editor',
 		),
 	
@@ -206,7 +239,7 @@ $cp_config['mb'][] = array(
 $cp_config['mb'][] = array(
 	'settings' => array(
 		'active' => true,
-		'id' => 'det_6',
+		'id' => 'det_6a',
 		'name' => __cp('Details', 'general'),
 		'post_type' => 'page',
 		'template' => 'two_columns_25_75',
@@ -226,12 +259,12 @@ $cp_config['mb'][] = array(
 		),
 		3 => array(
 			'id' => 'column_1_25_75',
-			'name' => __cp('Left column', 'general'),
+			'name' => __cp('Column 1', 'general'),
 			'type' => 'editor',
 		),
 		4 => array(
 			'id' => 'column_2_25_75',
-			'name' => __cp('Right column', 'general'),
+			'name' => __cp('Column 2', 'general'),
 			'type' => 'editor',
 		),
 	
@@ -261,17 +294,17 @@ $cp_config['mb'][] = array(
 		),
 		3 => array(
 			'id' => 'column_1_3',
-			'name' => __cp('Left column', 'general'),
+			'name' => __cp('Column 1', 'general'),
 			'type' => 'editor',
 		),
 		4 => array(
 			'id' => 'column_2_3',
-			'name' => __cp('Middle column', 'general'),
+			'name' => __cp('Column 2', 'general'),
 			'type' => 'editor',
 		),
 		5 => array(
 			'id' => 'column_3_3',
-			'name' => __cp('Right column', 'general'),
+			'name' => __cp('Column 3', 'general'),
 			'type' => 'editor',
 		),
 	
@@ -341,35 +374,35 @@ $cp_config['template']['intro'] = array(
 
 $cp_config['template']['single_column_100'] = array(
 	'active' => 'true',
-	'name' => __cp('Single column - full width', 'general'),
+	'name' => __cp('Single column - 100%', 'general'),
 	'post_type' => 'page', 
 	'file' => '03.html'
 );
 
 $cp_config['template']['single_column_75'] = array(
 	'active' => 'true',
-	'name' => __cp('Single column - 3/4 width', 'general'),
+	'name' => __cp('Single column - 75%', 'general'),
 	'post_type' => 'page', 
 	'file' => '04.html'
 );
 
 $cp_config['template']['single_column_50'] = array(
 	'active' => 'true',
-	'name' => __cp('Single column - half width', 'general'),
+	'name' => __cp('Single column - 50%', 'general'),
 	'post_type' => 'page', 
 	'file' => '05.html'
 );
 
 $cp_config['template']['two_columns_50_50'] = array(
 	'active' => 'true',
-	'name' => __cp('Two columns - 50/50', 'general'),
+	'name' => __cp('Two columns - 50%/50%', 'general'),
 	'post_type' => 'page', 
 	'file' => '06.html'
 );
 
 $cp_config['template']['two_columns_25_75'] = array(
 	'active' => 'true',
-	'name' => __cp('Two columns - 25/75', 'general'),
+	'name' => __cp('Two columns - 25%/75%', 'general'),
 	'post_type' => 'page', 
 	'file' => '07.html'
 );

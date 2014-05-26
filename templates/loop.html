@@ -1,0 +1,148 @@
+{if {post_meta key="_cp_template"} eq image}
+	{post_meta key="image_bg" out="arrayImages"}
+	{if $arrayImages}
+		<div class="container">
+			<div class="element no-padding">
+				<section class="main-image full">	
+						{foreach from=$arrayImages item=image key=key}
+									{image id=$image q=95 title={bloginfo key=name}}
+						{/foreach}
+					<div class="txt">
+						<div class="{if {post_meta key="align"} eq 1}left{elseif {post_meta key="align"} eq 2} center{elseif {post_meta key="align"} eq 3} right{/if} {if {post_meta key="valign"} eq 1} top{elseif {post_meta key="valign"} eq 2} middle{elseif {post_meta key="valign"} eq 3} bottom{/if} {if {post_meta key="text_align"} eq 1}t_left{elseif {post_meta key="text_align"} eq 2} t_center{elseif {post_meta key="text_align"} eq 3} t_right{/if}">
+							<p>
+								{post_meta key="txt"}
+							</p>
+							{if {post_meta key="cta_text"}}
+								<a href="{post_meta key="cta_link"}" class="cta">{post_meta key="cta_text"}</a>
+							{/if}
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	{/if}
+{/if}
+{if {post_meta key="_cp_template"} eq intro}
+	<div class="container">
+		<div class="element no-padding">
+			<section class="special full">
+				{post_meta key="special_txt" html="1"}
+				{if {post_meta key="special_cta_text"}}
+					<br/><a href="{post_meta key="special_cta_link"}" class="cta">{post_meta key="special_cta_text"}</a>
+				{/if}
+			</section>
+		</div>
+	</div>
+{/if}
+{if {post_meta key="_cp_template"} eq single_column_100}			
+	<div class="container">
+		<div class="element">
+			<h2>{post_meta key=title_100}</h2>
+			<h3>{post_meta key=subtitle_100}</h3>
+			<section class="columns">
+				<article class="single-column content">
+					{post_meta key=text_100 html=1}
+				</article>
+			</section>
+		</div>
+	</div>
+{/if}
+{if {post_meta key="_cp_template"} eq single_column_75}			
+	<div class="container">
+		<div class="element">
+			<h2>{post_meta key=title_75}</h2>
+			<h3>{post_meta key=subtitle_75}</h3>
+			<section class="columns">
+				<article class="single-column medium content">
+					{post_meta key=text_75 html=1}
+				</article>
+			</section>
+		</div>
+	</div>
+{/if}
+{if {post_meta key="_cp_template"} eq single_column_50}			
+	<div class="container">
+		<div class="element">
+			<h2>{post_meta key=title_50}</h2>
+			<h3>{post_meta key=subtitle_50}</h3>
+			<section class="columns">
+				<article class="single-column small content">
+					{post_meta key=text_50 html=1}
+				</article>
+			</section>
+		</div>
+	</div>
+{/if}
+{if {post_meta key="_cp_template"} eq two_columns_50_50}			
+	<div class="container">
+		<div class="element">
+			<h2>{post_meta key=title_50_50}</h2>
+			<h3>{post_meta key=subtitle_50_50}</h3>
+			<section class="columns">
+				<article class="two-columns content">
+					{post_meta key=column_1_50_50 html=1}
+				</article>
+				<article class="two-columns content">
+					{post_meta key=column_2_50_50 html=1}
+				</article>
+			</section>
+		</div>
+	</div>
+{/if}
+{if {post_meta key="_cp_template"} eq two_columns_25_75}			
+	<div class="container">
+		<div class="element">
+			<h2>{post_meta key=title_25_75}</h2>
+			<h3>{post_meta key=subtitle_25_75}</h3>
+			<section class="columns">
+				<article class="two-columns content small">
+					{post_meta key=column_1_25_75 html=1}
+				</article>
+				<article class="two-columns content big">
+					{post_meta key=column_2_25_75 html=1}
+				</article>
+			</section>
+		</div>
+	</div>
+{/if}
+{if {post_meta key="_cp_template"} eq three_columns}			
+	<div class="container">
+		<div class="element">
+			<h2>{post_meta key=title_3}</h2>
+			<h3>{post_meta key=subtitle_3}</h3>
+			<section class="columns">
+				<article class="three-columns content">
+					{post_meta key=column_1_3 html=1}
+				</article>
+				<article class="three-columns content">
+					{post_meta key=column_1_3 html=1}
+				</article>
+				<article class="three-columns content">
+					{post_meta key=column_1_3 html=1}
+				</article>
+			</section>
+		</div>
+	</div>
+{/if}
+{if {post_meta key="_cp_template"} eq four_columns}			
+	<div class="container">
+		<div class="element">
+			<h2>{post_meta key=title_4}</h2>
+			<h3>{post_meta key=subtitle_4}</h3>
+			<section class="columns">
+				<article class="four-columns content">
+					{post_meta key=column_1_4 html=1}
+				</article>
+				<article class="four-columns content">
+					{post_meta key=column_2_4 html=1}
+				</article>
+				<article class="four-columns content">
+					{post_meta key=column_3_4 html=1}
+				</article>
+				<article class="four-columns content">
+					{post_meta key=column_4_4 html=1}
+				</article>
+			</section>
+		</div>
+	</div>
+{/if}
